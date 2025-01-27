@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.3cap;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    /*overflow: hidden;*/
+    text-align: center;
+}
+
+.hero {
+    background: url('bgimage.jpg')no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-----button----*/
+button {
+    transition: all .5s ease;
+    color: #00649e;
+    border: 3px solid #00649e;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 50px;
+    width: 120px;   
+    font-weight: bold; 
+}
+button:hover {
+    color: #fff;
+    background-color: #00649e;
+}
+
+/*-----about-----*/
+
+#about, #features {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 30px; /* Adjust the value as needed for more or less space */
+}
+
+.about-img {
+    max-width: 30%; /* Adjust as needed */
+    margin-right: 50px;
+    margin-left: 20px; /* Space between the image and the text */
+    border-radius: 10px;
+    
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right; /* Aligns the text to the right within the flex item */
+    font-size: 1.5cap;
+}
+
+.content p {
+    max-width: 60%; /* Adjust as needed */
+    text-align: left; /* Ensures text is right-aligned within the paragraph */
+}
+
+/*-----features-----*/
+
+.features-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.card1 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 8px 18px rgba(34, 35, 58, 0.5);
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.card1 h2 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 16px;
+}
+
+.card1 .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card1 .desc {
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
+.card1 .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.card1-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.card1.reverse .card1-text {
+  grid-template-columns: 2fr 1fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+.path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.portada-1 {
+  background-image: url("1stimg (1).jpg");
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.portada-2 {
+  background-image: url("2ndimg22.jpg");
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-position: center right; /* Adjusted */
+}
+
+.portada-3 {
+  background-image: url("3rdimg2.jpg");
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.portada-4 {
+  background-image: url("4thimg.jpg");
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-position: center right; /* Adjusted */
+}
+
+/*-------advantages-----*/
+
+/*Colors*/ 
+:root {
+  --color-primary-white: rgb(240, 240, 240);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.advantages-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+
+.card {
+  width: 18rem;
+  height: 22rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-primary-white);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity as needed */
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+    z-index: 0; /* Ensure the image is below the blur overlay */
+  }
+
+  .card-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+
+  h2 {
+    position: absolute;
+    inset: auto auto 0px 20px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    /*font-family:  sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+    padding: 0px;
+    z-index: 2; /* Ensure the text is above the blur overlay */
+    text-align: center;
+    max-width: 87%;
+    padding-bottom: 10px;
+
+  }
+
+   p, a {
+    position: absolute;
+    
+    opacity: 0;
+    max-width: 80%;
+    height: 25%;
+    transition: opacity .3s ease-out;
+    backdrop-filter: blur(5px);
+    padding: 5px;
+    z-index: 2; /* Ensure the text and links are above the blur overlay */
+    text-align: center;
+  }
+
+  p {
+    inset: auto auto 60px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.5cap;
+  }
+
+  a {
+    inset: auto auto 20px 20px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover h2 {
+    inset: auto auto 160px 20px;
+    transition: inset .3s ease-out;
+  }
+
+  &:hover p, &:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+
+  &:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+  }
+
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+}
+
+/*------footer-------*/
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+
+.footer {
+  background-color: #f8f8f8; /* Change this to your preferred background color */
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  
+  
+ 
+}
+
+.footer img {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #0f6ed0;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+/* Footer copyright section */
+.footer-copyright-section {
+  background-color: #161617; /* Change this to your preferred background color */
+  color: #fff;
+  padding: 3px 0;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.footer-copyright-section p {
+  margin: 0;
+  font-size: 17px;
+  
+}
+/*.footer p:last-of-type {
+  margin-bottom: 50px; /* Increased margin-bottom to create space above black footer*
+}
+
+Responsive design */
+@media (max-width: 767px) {
+  .footer {
+      text-align: center;
+  }
+
+  .footer img {
+      width: 100px;
+  }
+
+  .footer p {
+      font-size: 12px;
+  }
+}
+
+
+
+
+
+
